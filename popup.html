@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Element Selector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Element Selector</h1>
+    <div class="section">
+      <button id="selectElement" class="select-btn">Select Element</button>
+      <div id="status" class="status"></div>
+    </div>
+    
+    <div class="section" id="resultSection" style="display: none;">
+      <label for="selector">CSS Selector:</label>
+      <input type="text" id="selector" readonly>
+      
+      <label for="note">Note (optional):</label>
+      <textarea id="note" placeholder="Add a note about this element..."></textarea>
+      
+      <button id="copyToClipboard" class="copy-btn">Copy to Clipboard</button>
+      <div id="copyStatus" class="copy-status"></div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
